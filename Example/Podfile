@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YSMSandbox_Example' do
+  pod 'YSMSandbox', :path => '../'
+
+  target 'YSMSandbox_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
