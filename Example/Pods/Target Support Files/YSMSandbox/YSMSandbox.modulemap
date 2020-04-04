@@ -1,0 +1,6 @@
+framework module YSMSandbox {
+  umbrella header "YSMSandbox-umbrella.h"
+
+  export *
+  module * { export * }
+}

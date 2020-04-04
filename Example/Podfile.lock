@@ -1,0 +1,16 @@
+PODS:
+  - YSMSandbox (0.1.0)
+
+DEPENDENCIES:
+  - YSMSandbox (from `../`)
+
+EXTERNAL SOURCES:
+  YSMSandbox:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YSMSandbox: f24dce74dfcab26d1d0098efd4cbd188af6473c8
+
+PODFILE CHECKSUM: 63b4d79386694a5c3e66f736d227e73593d4d0cb
+
+COCOAPODS: 1.9.0.beta.2

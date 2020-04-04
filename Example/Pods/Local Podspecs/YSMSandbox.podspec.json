@@ -1,0 +1,22 @@
+{
+  "name": "YSMSandbox",
+  "version": "0.1.0",
+  "summary": "A short description of YSMSandbox.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yisimeng/YSMSandbox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yisimeng": "465386131@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yisimeng/YSMSandbox.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YSMSandbox/Classes/**/*"
+}
