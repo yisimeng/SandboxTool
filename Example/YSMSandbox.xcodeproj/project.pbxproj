@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		1C5DB547ED9FA9B39E751F0F /* Pods_YSMSandbox_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSMSandbox_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4830C13E47C62E036BF2E14C /* YSMSandbox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YSMSandbox.podspec; path = ../YSMSandbox.podspec; sourceTree = "<group>"; };
-		48BFFCEC46A7AA51CE182B16 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4830C13E47C62E036BF2E14C /* YSMSandbox.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSMSandbox.podspec; path = ../YSMSandbox.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		48BFFCEC46A7AA51CE182B16 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4BE3BA7C39FC386DF1D5CC14 /* Pods_YSMSandbox_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSMSandbox_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* YSMSandbox_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSMSandbox_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6255F1B1329FA8B8261658CE /* Pods-YSMSandbox_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMSandbox_Tests.release.xcconfig"; path = "Target Support Files/Pods-YSMSandbox_Tests/Pods-YSMSandbox_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9276211061A76AF38E1CC017 /* Pods-YSMSandbox_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMSandbox_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YSMSandbox_Tests/Pods-YSMSandbox_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1A415623AC04D31E5120D43 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D1A415623AC04D31E5120D43 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D8F8E4946A84DB49C38F371C /* Pods-YSMSandbox_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMSandbox_Example.release.xcconfig"; path = "Target Support Files/Pods-YSMSandbox_Example/Pods-YSMSandbox_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F4CBC1E2310C0491C5590231 /* Pods-YSMSandbox_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMSandbox_Example.debug.xcconfig"; path = "Target Support Files/Pods-YSMSandbox_Example/Pods-YSMSandbox_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				9276211061A76AF38E1CC017 /* Pods-YSMSandbox_Tests.debug.xcconfig */,
 				6255F1B1329FA8B8261658CE /* Pods-YSMSandbox_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3C7D2ULK28;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 3C7D2ULK28;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,7 +480,9 @@
 			baseConfigurationReference = F4CBC1E2310C0491C5590231 /* Pods-YSMSandbox_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				INFOPLIST_FILE = YSMSandbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +497,9 @@
 			baseConfigurationReference = D8F8E4946A84DB49C38F371C /* Pods-YSMSandbox_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				INFOPLIST_FILE = YSMSandbox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9276211061A76AF38E1CC017 /* Pods-YSMSandbox_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6255F1B1329FA8B8261658CE /* Pods-YSMSandbox_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 3C7D2ULK28;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

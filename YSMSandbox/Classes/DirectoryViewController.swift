@@ -18,8 +18,9 @@ class DirectoryViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "关闭", style: .done, target: self, action: #selector(dissmissAction))
         
+        tableView.tableFooterView = UIView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: kDirectorCellIndentifier)
     }
     
@@ -70,5 +71,9 @@ extension DirectoryViewController{
                 self.tableView.reloadData()
             }
         }
+    }
+    
+    @objc func dissmissAction() {
+        dismiss(animated: true, completion: nil)
     }
 }
